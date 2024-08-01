@@ -16,4 +16,6 @@ send-gamemode-change-message: true
 enable-enderchest-command: true
 #toggles if players can use /ec to access an enderchest from everywhere
 
-
+enable-tablist-header-footer: true
+tablist-header: "§4GAM-Experiment"
+tablist-footer: "Edit the tablist in the plugin config"

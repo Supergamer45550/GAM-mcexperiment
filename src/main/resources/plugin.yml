@@ -30,3 +30,6 @@ commands:
   anvil:
     description: Opens an anvil interface
     usage: /anvil
+  tablist:
+    description: Sets the tablist header and footer
+    usage: /tablist

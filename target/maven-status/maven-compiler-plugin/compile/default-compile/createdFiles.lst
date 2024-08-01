@@ -1,9 +1,8 @@
 org\gam\commands\HomeCommand$1.class
-org\gam\commands\testcommand.class
 org\gam\experiment\Experiment.class
+org\gam\anderes\TablistCommand.class
 org\gam\Listener\BlockListener.class
 org\gam\commands\HomeCommand.class
-org\gam\commands\VersionCommand.class
 org\gam\commands\ping.class
 org\gam\commands\EnderChestCommand.class
 org\gam\Listener\JoinListener.class

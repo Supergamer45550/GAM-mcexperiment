@@ -1,5 +1,5 @@
 name: experiment
-version: '1.1.0-DEV2'
+version: '1.1.0'
 main: org.gam.experiment.Experiment
 api-version: '1.21'
 authors: [SuperPlayer2417]
@@ -27,3 +27,9 @@ commands:
   ec:
     description: Öffne eine ender-chest
     usage: /ec
+  anvil:
+    description: Opens an anvil interface
+    usage: /anvil
+  tablist:
+    description: Sets the tablist header and footer
+    usage: /tablist

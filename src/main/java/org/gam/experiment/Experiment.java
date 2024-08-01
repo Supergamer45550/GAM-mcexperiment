@@ -4,6 +4,8 @@ import org.gam.Listener.DamageListener;
 import org.gam.Listener.JoinListener;
 import org.gam.Listener.BlockListener;
 import org.gam.Listener.GameModeListener;
+import org.gam.commands.EnderChestCommand;
+import org.gam.anderes.TablistCommand;
 import org.bukkit.Bukkit;
 import org.bukkit.plugin.PluginManager;
 import org.bukkit.plugin.java.JavaPlugin;
@@ -36,6 +38,12 @@ public final class Experiment extends JavaPlugin {
             this.getCommand("ec").setExecutor(new EnderChestCommand());
         }
 
+
+        // Register TablistCommand with config toggle
+        if (getConfig().getBoolean("enable-tablist-header-footer")) {
+            this.getCommand("tablist").setExecutor(new TablistCommand(this));
+        }
+
         this.getCommand("ping").setExecutor(new ping());
         this.getCommand("gamexperiment").setExecutor(new gamexperiment());
 
@@ -59,3 +67,5 @@ public final class Experiment extends JavaPlugin {
         getLogger().info(ChatColor.RED + "GAM-TEST" + ChatColor.GRAY + " wurde deaktiviert!");
     }
 }
+
+
