@@ -7,8 +7,6 @@ description: Gam experimente
 website: https://www.gameandmore.eu
 commands:
   testcommand:
-    description: command
-    usage: /<command>
   ping:
     description: command
     usage: /<command>
@@ -27,9 +25,6 @@ commands:
   ec:
     description: Öffne eine ender-chest
     usage: /ec
-  anvil:
-    description: Opens an anvil interface
-    usage: /anvil
   tablist:
     description: Sets the tablist header and footer
     usage: /tablist

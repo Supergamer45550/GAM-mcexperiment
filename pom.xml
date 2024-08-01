@@ -6,7 +6,7 @@
 
   <groupId>org.gam</groupId>
   <artifactId>experiment</artifactId>
-  <version>1.2.0</version>
+  <version>1.2.1</version>
   <packaging>jar</packaging>
 
   <name>experiment</name>

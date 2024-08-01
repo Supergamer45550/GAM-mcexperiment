@@ -41,19 +41,19 @@ public class HomeCommand implements CommandExecutor {
 
             Location home = setHomeCommand.getHome(player.getName());
             if (home != null) {
-                player.sendMessage("Teleporting to home in 10 seconds...");
+                player.sendMessage("Du wirst in 5 Sekunden teleportiert");
                 new BukkitRunnable() {
                     @Override
                     public void run() {
                         player.teleport(home);
                         player.sendMessage("Teleported to home!");
                     }
-                }.runTaskLater(plugin, 200); // 200 ticks = 10 seconds
+                }.runTaskLater(plugin, 100);
 
                 cooldowns.put(playerId, currentTime);
                 return true;
             } else {
-                player.sendMessage("You have not set a home yet.");
+                player.sendMessage("Du hast dein home noch nicht gesetzt");
                 return false;
             }
         } else {
