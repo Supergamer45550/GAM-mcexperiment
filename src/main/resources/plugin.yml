@@ -12,3 +12,6 @@ commands:
   ping:
     description: command
     usage: /<command>
+  heal:
+    description: Fully heals a player
+    usage: /heal <player>

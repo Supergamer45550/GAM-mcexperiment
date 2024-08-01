@@ -1,5 +1,5 @@
 name: experiment
-version: 'Beta-1.4'
+version: 'Beta-1.6'
 main: org.gam.experiment.Experiment
 api-version: '1.21'
 authors: [SuperPlayer2417]
@@ -12,3 +12,6 @@ commands:
   ping:
     description: command
     usage: /<command>
+  heal:
+    description: Fully heals a player
+    usage: /heal <player>
