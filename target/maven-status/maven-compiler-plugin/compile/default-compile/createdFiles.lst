@@ -1,0 +1,6 @@
+org\gam\commands\testcommand.class
+org\gam\experiment\Experiment.class
+org\gam\Listener\JoinListener.class
+org\gam\Listener\DamageListener.class
+org\gam\Listener\BlockListener.class
+org\gam\commands\ping.class
