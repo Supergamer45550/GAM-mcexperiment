@@ -1,5 +1,5 @@
 name: experiment
-version: 'Beta-1.6'
+version: '1.1.0-DEV1'
 main: org.gam.experiment.Experiment
 api-version: '1.21'
 authors: [SuperPlayer2417]
@@ -15,3 +15,12 @@ commands:
   heal:
     description: Fully heals a player
     usage: /heal <player>
+  sethome:
+    description: Set your home location
+    usage: /sethome
+  home:
+    description: Teleport to your home
+    usage: /home
+  gamexperiment:
+    description: Plugin info
+    usage: /<command>

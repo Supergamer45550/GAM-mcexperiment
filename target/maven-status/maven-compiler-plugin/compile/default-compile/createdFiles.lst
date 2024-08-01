@@ -1,7 +1,13 @@
+org\gam\commands\HomeCommand$1.class
 org\gam\commands\testcommand.class
 org\gam\experiment\Experiment.class
+org\gam\Listener\BlockListener.class
+org\gam\commands\HomeCommand.class
+org\gam\commands\VersionCommand.class
+org\gam\commands\ping.class
 org\gam\Listener\JoinListener.class
 org\gam\Listener\DamageListener.class
-org\gam\Listener\BlockListener.class
 org\gam\commands\HealCommand.class
-org\gam\commands\ping.class
+org\gam\commands\gamexperiment.class
+org\gam\commands\SetHomeCommand.class
+org\gam\Listener\GameModeListener.class
