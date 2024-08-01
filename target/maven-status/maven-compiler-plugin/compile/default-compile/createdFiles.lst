@@ -7,6 +7,7 @@ org\gam\commands\ping.class
 org\gam\commands\EnderChestCommand.class
 org\gam\Listener\JoinListener.class
 org\gam\Listener\DamageListener.class
+org\gam\Listener\FirstJoinListener.class
 org\gam\commands\HealCommand.class
 org\gam\commands\gamexperiment.class
 org\gam\commands\SetHomeCommand.class

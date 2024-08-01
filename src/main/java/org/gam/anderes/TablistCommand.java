@@ -1,5 +1,6 @@
 package org.gam.anderes;
 
+import org.bukkit.ChatColor;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
@@ -24,6 +25,7 @@ public class TablistCommand implements CommandExecutor {
         Player player = (Player) sender;
         String header = plugin.getConfig().getString("tablist-header", "Welcome to the Server!");
         String footer = plugin.getConfig().getString("tablist-footer", "Enjoy your stay!");
+        player.sendMessage("[" + ChatColor.GOLD + "Tablist" + ChatColor.WHITE  +  "]" + " Die Tablist wurde aktiviert");
 
         player.setPlayerListHeaderFooter(header, footer);
         return true;

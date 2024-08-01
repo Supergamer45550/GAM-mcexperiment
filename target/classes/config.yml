@@ -1,4 +1,5 @@
 #GAM-experiment config
+#toggle these settings by writing true or false
 
 heal-command-enabled: true
 #toggles the /heal command
@@ -19,3 +20,14 @@ enable-enderchest-command: true
 enable-tablist-header-footer: true
 tablist-header: "§4GAM-Experiment"
 tablist-footer: "Edit the tablist in the plugin config"
+#This is the Tablist config which you can activate using /tablist
+
+enable-first-join-message: true
+first-join-message: "&aWillkommen &b%player% &auf dem server zum ersten mal"
+#custom join message if somebody joins for the first time
+
+enable-information-command: true
+#toggles the /gamexperiment command
+
+enable-ping-command: true
+#toggles the /ping command

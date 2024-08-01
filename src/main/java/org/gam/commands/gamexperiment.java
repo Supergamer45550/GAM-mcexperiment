@@ -11,7 +11,7 @@ public class gamexperiment implements CommandExecutor {
     public boolean onCommand(CommandSender sender, Command command, String label, String[] args) {
         if (sender instanceof Player) {
             Player player = (Player) sender;
-            player.sendMessage(ChatColor.GOLD + "GAM-Experiment" + " \n"  + "Version " + ChatColor.BLUE + "1.1.0" + "\n" + ChatColor.WHITE + "Viel Spaß!");
+            player.sendMessage(ChatColor.GOLD + "GAM-Experiment" + " \n"  + "Version " + ChatColor.BLUE + "1.2.0 (DEV-release)" + "\n" + ChatColor.WHITE + "Viel Spaß!");
             return true;
         }
         return false;

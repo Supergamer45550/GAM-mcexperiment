@@ -1,6 +1,7 @@
 package org.gam.experiment;
 
 import org.gam.Listener.DamageListener;
+import org.gam.Listener.FirstJoinListener;
 import org.gam.Listener.JoinListener;
 import org.gam.Listener.BlockListener;
 import org.gam.Listener.GameModeListener;
@@ -28,24 +29,30 @@ public final class Experiment extends JavaPlugin {
         pluginManager.registerEvents(new JoinListener(), this);
         pluginManager.registerEvents(new BlockListener(), this);
 
-        // Register GameModeListener with config toggle
         if (getConfig().getBoolean("send-gamemode-change-message")) {
             pluginManager.registerEvents(new GameModeListener(), this);
         }
 
-        // Register EnderChestCommand with config toggle
         if (getConfig().getBoolean("enable-enderchest-command")) {
             this.getCommand("ec").setExecutor(new EnderChestCommand());
         }
 
 
-        // Register TablistCommand with config toggle
         if (getConfig().getBoolean("enable-tablist-header-footer")) {
             this.getCommand("tablist").setExecutor(new TablistCommand(this));
         }
 
-        this.getCommand("ping").setExecutor(new ping());
-        this.getCommand("gamexperiment").setExecutor(new gamexperiment());
+        if (getConfig().getBoolean("enable-first-join-message")) {
+            pluginManager.registerEvents(new FirstJoinListener(this), this);
+        }
+
+        if (getConfig().getBoolean("enable-ping-command")) {
+            this.getCommand("ping").setExecutor(new ping());
+        }
+
+        if (getConfig().getBoolean("enable-information-command")) {
+            this.getCommand("gamexperiment").setExecutor(new gamexperiment());
+        }
 
         if (getConfig().getBoolean("heal-command-enabled")) {
             this.getCommand("heal").setExecutor(new HealCommand(this));
@@ -59,12 +66,12 @@ public final class Experiment extends JavaPlugin {
             }
         }
 
-        getLogger().info(ChatColor.RED + "GAM-TEST" + ChatColor.GRAY + " wurde aktiviert!");
+        getLogger().info("GAM-EXPERIMENT" + ChatColor.GRAY + " wurde aktiviert!");
     }
 
     @Override
     public void onDisable() {
-        getLogger().info(ChatColor.RED + "GAM-TEST" + ChatColor.GRAY + " wurde deaktiviert!");
+        getLogger().info(ChatColor.RED + "GAM-EXPERIMENT" + ChatColor.GRAY + " wurde deaktiviert!");
     }
 }
 
