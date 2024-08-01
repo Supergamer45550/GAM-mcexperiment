@@ -1,0 +1,7 @@
+heal-command-enabled: true
+damage-listener-enabled: true
+sethome-command-enabled: true
+home-command-enabled: true
+send-gamemode-change-message: true
+enable-enderchest-command: true
+

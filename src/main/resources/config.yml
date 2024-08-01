@@ -1,0 +1,19 @@
+#GAM-experiment config
+
+heal-command-enabled: true
+#toggles the /heal command
+
+damage-listener-enabled: true
+#toggles the custom chatmessages if somebody takes damage
+
+sethome-command-enabled: true
+home-command-enabled: true
+#toggles the /home system please have both on the same stage
+
+send-gamemode-change-message: true
+#toggles the message, that Operators get if somebody changes gamemode
+
+enable-enderchest-command: true
+#toggles if players can use /ec to access an enderchest from everywhere
+
+

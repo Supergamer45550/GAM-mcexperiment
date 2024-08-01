@@ -1,0 +1,29 @@
+name: experiment
+version: '1.1.0-DEV2'
+main: org.gam.experiment.Experiment
+api-version: '1.21'
+authors: [SuperPlayer2417]
+description: Gam experimente
+website: https://www.gameandmore.eu
+commands:
+  testcommand:
+    description: command
+    usage: /<command>
+  ping:
+    description: command
+    usage: /<command>
+  heal:
+    description: Fully heals a player
+    usage: /heal <player>
+  sethome:
+    description: Set your home location
+    usage: /sethome
+  home:
+    description: Teleport to your home
+    usage: /home
+  gamexperiment:
+    description: Plugin info
+    usage: /<command>
+  ec:
+    description: Öffne eine ender-chest
+    usage: /ec
